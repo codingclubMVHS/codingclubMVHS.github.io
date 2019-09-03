@@ -6,6 +6,9 @@ $(function(){
   var day = d.getDay();
   var hour = d.getHours();
   var min = d.getMinutes();
+  $("#home_h1_heading").addClass("animated fadeInRight");
+  $("#home_pContainer").addClass("animated slideInUp");
+  var animationInterations = $(".pContainer").children().length;
 
   // if(day == 6 && hour == 12 && min == 34){
   //   meetings++;
@@ -14,13 +17,7 @@ $(function(){
   $("#navH1").click(function(){
     typewrite(codingMessage);
   });
-  var $head = $("#calendar").contents().find("head");
 
-  $head.append($("<link/>", {
-      rel: "stylesheet",
-      href: "calendar.css",
-      type: "text/css"
-  }));
   $(".item-title").click(function(){
     var target = $(this).parent().find(".item-content");
     target.toggle();
@@ -36,16 +33,9 @@ function typewrite(word){
     function(){
       if( i < word.length ){
         whole += word.charAt(i);
-        $("#navH1").html(whole);
+        $("#navH1").html("{ " + whole + " }");
         i++;
       }
     },200)
 }
-
-// var whole = "";
-
-// for( var i = 0; i < word.length; i++){
-//   whole += word.charAt(i);
-//   $("#navH1").html(whole);
-// }
 
