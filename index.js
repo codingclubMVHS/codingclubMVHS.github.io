@@ -1,5 +1,5 @@
 $(function(){
-  var members = 24+;
+  var members = 24;
   var meetings = 0;
   var codingMessage = "CODING CLUB";
 
