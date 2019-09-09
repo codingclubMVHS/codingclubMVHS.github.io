@@ -2,17 +2,12 @@ $(function(){
   var members = 5;
   var meetings = 0;
   var codingMessage = "CODING CLUB";
-  var d = new Date();
-  var day = d.getDay();
-  var hour = d.getHours();
-  var min = d.getMinutes();
+
   $("#home_h1_heading").addClass("animated fadeInRight");
   $("#home_pContainer").addClass("animated slideInUp");
   var animationInterations = $(".pContainer").children().length;
 
-  // if(day == 6 && hour == 12 && min == 34){
-  //   meetings++;
-  // }
+  meetings = meetingCount();
   typewrite(codingMessage);
   $("#navH1").click(function(){
     typewrite(codingMessage);
@@ -23,7 +18,7 @@ $(function(){
     target.toggle();
   });
   $("#clubMembers").html(members);
-  $("#meetingCount").html((meetings >= 1) ? meetings : 0);
+  $("#meetingCount").html(meetings);
 });
 
 function typewrite(word){
@@ -39,3 +34,17 @@ function typewrite(word){
     },200)
 }
 
+function meetingCount(){
+  var initD = new Date("09/04/2019");
+  var d = new Date();
+  var int_time = initD.getTime();
+  var time = d.getTime();
+  var num_week = Math.round((time - int_time) / (1000*60*60*24*7));
+  console.log(num_week);
+  var meetingCount = 0;
+  for( i = 0 ; i < num_week; i++){
+    meetingCount++;
+  }
+ 
+  return meetingCount;
+}
