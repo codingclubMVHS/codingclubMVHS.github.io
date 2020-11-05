@@ -5,8 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="icon" href="mvhs_coding_club_icon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="animate.css">
-    <script src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/libraries/animate.css">
+    <script src="/libraries/jquery-3.4.1.min.js"></script>
     <script src="index.js" ></script>
     <title>Coding Club</title>
   </head>
@@ -26,24 +26,28 @@
           <div class="pContainer" id="home_pContainer">
             <p id="home_message">We are a group of students that share the common interest in programming.</p>
             <p id="home_message">Our mission is to develop our knowledge of programming.</p>
-            <p id="home_message">Join Us Every Wednesday Morning from 7:10-7:50 in Room U428</p>
+            <p id="home_message"><span id="update_tag">Updates Below </span><strike>Join Us Every Wednesday Morning from 7:10-7:50 in Room U428</strike></p>
           </div>
         </div>
       </div>
     <div class="section" id="section_1">
       <h1>Club Updates</h1>
-      <h3>Third Coding Club Meeting: 10/9/19</h3>
+      <div class="update_item">
+        <h2>COVID-19 Update:</h2>  
+        <h3>Due to the coronavirus coding club will be meeting on Fridays at 6:30 over the Coding Club Discord Server.</h3>
+        <a href="https://discord.gg/ZUQURUj" target="_blank">https://discord.gg/ZUQURUj</a>
+      </div>
     </div>
     <div class="section" id="section_2">
       <h1>Our Journey</h1>
       <div class="JourneyStatContainer">
         <div class="JourneyStat">
-          <img src="person-icon.svg" alt="triangle with all three sides equal" height="40px" width="40px" draggable="false">
+          <img src="media/person-icon.svg" alt="triangle with all three sides equal" height="40px" width="40px" draggable="false">
           <h1 id="clubMembers"></h1>
           <h3>Members</h3>
         </div>
         <div class="JourneyStat">
-          <img src="time-icon.svg" alt="triangle with all three sides equal" height="40px" width="40px" draggable="false"/>
+          <img src="media/time-icon.svg" alt="triangle with all three sides equal" height="40px" width="40px" draggable="false"/>
           <h1 id="meetingCount"></h1>
           <h3>Meetings</h3>
         </div>

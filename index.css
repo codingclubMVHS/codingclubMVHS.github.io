@@ -32,7 +32,7 @@ nav{
   margin-left: -8px
 }
 .background_Image{
-  background-image: url("programmingImg.jpg");
+  background-image: url("media/programmingImg.jpg");
   background-size:100% 100%;
   background-repeat: no-repeat;
   padding: 150px 0 150px 0;
@@ -41,7 +41,7 @@ nav{
   z-index: 0;
 }
 .background_Image_meeting{
-  background-image: url("meetings.jpg");
+  background-image: url("media/meetings.jpg");
   background-size:100% 100%;
   background-repeat: no-repeat;
   padding: 150px 0 150px 0;
@@ -50,7 +50,7 @@ nav{
   z-index: 0;
 }
 .background_Image_help{
-  background-image: url("help.jpg");
+  background-image: url("media/help.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   padding: 150px 0 150px 0;
@@ -59,7 +59,7 @@ nav{
   z-index: 0;
 }
 .background_Image_contact{
-  background-image: url("contact.jpg");
+  background-image: url("media/contact.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   padding: 150px 0 150px 0;
@@ -139,4 +139,16 @@ footer{
   padding: 10px;
   background: rgb(30,30,30);
   color:white;
+}
+
+.update_item{
+  margin:20px 0;
+}
+
+.update_item > * {
+  margin: 10px 0 ;
+}
+
+#update_tag{
+  font-weight:800;
 }
