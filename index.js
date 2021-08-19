@@ -22,7 +22,7 @@ $(function(){
   $("#clubMembers").html(members);
   $("#meetingCount").html(meetings);
   
-  $("footer").html(`© Copyright ${currentYear},/ MVHS Coding Club`);
+  $("footer").html(`© Copyright ${currentYear}, MVHS Coding Club`);
 });
 
 function typewrite(word){
