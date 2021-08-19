@@ -1,6 +1,8 @@
 $(function(){
+  var currentDate = new Date();
   var members = 31;
   var meetings = 0;
+  var currentYear = currentDate.getFullYear();
   var codingMessage = "CODING CLUB";
 
   $("#home_h1_heading").addClass("animated fadeInRight");
@@ -19,6 +21,8 @@ $(function(){
   });
   $("#clubMembers").html(members);
   $("#meetingCount").html(meetings);
+  
+  $("footer").html(`© Copyright ${currentYear},/ MVHS Coding Club`);
 });
 
 function typewrite(word){
